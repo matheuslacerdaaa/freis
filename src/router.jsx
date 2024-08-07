@@ -8,6 +8,7 @@ import Segundo from './pages/segundo';
 import Terceiro from './pages/terceiro';
 import Quarto from './pages/quarto';
 import Quinto from './pages/quinto';
+import Sexto from './pages/sexto'
 
 
 export default function Navegacao() {
@@ -23,6 +24,7 @@ export default function Navegacao() {
                 <Route path= '/terceiro' element= {<Terceiro/>} />
                 <Route path= '/quarto' element= {<Quarto/>} />
                 <Route path='/quinto' element= {<Quinto/>} />
+                <Route path='/sexto' element={<Sexto/>} />
                 <Route path='*' element={<Notfound/>}/>
                 
             </Routes>

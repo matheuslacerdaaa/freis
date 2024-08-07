@@ -1,0 +1,170 @@
+.exercicio6{
+
+
+
+
+    header {
+        height: 70px;
+        width: 100vw;
+        background-color: #6278F7;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+    }
+
+    img {
+        height: 50px;
+        width: 45px;
+        margin-left: 60px;
+    }
+
+    h2 {
+        font-family: 'Roboto';
+        font-size: 16px;
+        color: #ffff;
+    }
+
+    nav {
+        width: 150px;
+        height: 90px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 0px 0px 830px;
+        gap: 20px;
+    }
+
+
+    .inicio {
+        font-family: 'Roboto';
+        text-decoration: none;
+        color: #ffff;
+    }
+
+    .sobre {
+        font-family: 'Roboto';
+        text-decoration: none;
+        color: #ffff;
+    }
+
+
+    main{
+       background-color: #cecece;
+       width: 100vw;
+       height: 827px;
+
+       img{
+
+        height: 40px;
+        width: 40px;
+
+    }
+}
+
+
+    .titulo{
+
+        padding: 40px 0px 0px 0px;   
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        h1{
+
+            font: 'Roboto';
+            font-size: 28px;
+            color: #313833;
+
+        }
+    }
+
+    .verde-escuro{
+
+        width: 1117px;
+        height: 4px;
+        background-color: #034b0f;
+        margin: 20px 0px 0px 60px;
+
+
+    }
+
+
+    .container{
+
+    background-color: #ffff;  
+    border-radius: 12px; 
+    width: 1090px;
+    height: 213px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 20px 0px 0px 60px;
+
+    p{
+
+        width: 80vw;
+        font: 400 16px 'Roboto';
+
+    }    
+
+    }
+
+    .caixa{
+
+        width: 450px;
+        height: 45%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        border-radius: 12px;
+        margin: 30px 0px 0px 425px;
+        padding: 30px 0px 0px 20px;
+        gap: 8px;
+
+
+        label{
+            font-size: 18px;
+            color: #383131;
+        }
+
+        input{
+            width: 414px;
+            height: 41px;
+            border-radius: 12px;
+            border: 1px solid #383131;
+            padding: 0px 0px 0px 10px;
+            margin: 5px 0px 0px 0px;
+        }
+
+    
+    }
+
+
+        button{
+            width: 216px;
+            height: 50px;
+            border-radius: 12px;
+            background-color: #6278F7;
+            color: #ffff;
+            border: none;
+        }
+
+        .botao{
+           padding-top: 30px;
+           width: 415px;
+           display: flex;
+           justify-content: end;
+           padding-bottom: 10px;
+        }
+
+        .p{
+
+            padding: 10px 0px 0px 705px;
+
+
+        }
+    
+
+}
