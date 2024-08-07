@@ -69,6 +69,8 @@ function App() {
           </div>
 
         </span>
+
+        <span>
           <div className="card5">
             <Link className='vermelho' to='/quinto'></Link>
 
@@ -76,6 +78,14 @@ function App() {
             <p>Exercício 05</p>
           </div>
 
+          <div className="card6">
+            <Link className='verde-escuro' to='/sexto'></Link>
+
+            <h3>Salário liquído</h3>
+            <p>Exercício 06</p>
+          </div>
+
+        </span>
 
         
 
