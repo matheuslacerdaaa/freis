@@ -30,7 +30,7 @@ export default function Sexto() {
                         <img src= '/assets/images/voltar.png' />
                     </Link>
 
-                    <h1>Exercício 04 - Cálculo de tempo</h1>
+                    <h1>Exercício 06 - Salário Líquido</h1>
                 </div>
 
                 <div className='verde-escuro'>

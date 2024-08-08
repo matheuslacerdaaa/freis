@@ -85,7 +85,37 @@ function App() {
             <p>Exercício 06</p>
           </div>
 
+          <div className="card7">
+            <Link className='rosa' to='/setimo'></Link>
+
+            <h3>Cores Primárias</h3>
+            <p>Exercício 07</p>
+          </div>
+
+          <div className="card8">
+            <Link className='azul-vermelho' to='/oitavo'></Link>
+
+            <h3>Temperatura Corporal</h3>
+            <p>Exercício 08</p>
+          </div>
         </span>
+
+        
+          <span className='tres'>
+
+            <div className="card9">
+              <Link className='roxo' to='/nono'></Link>
+
+              <h3>Sorvete</h3>
+              <p>Exercício 09</p>
+            </div>
+
+          </span>
+         
+
+          
+
+        
 
         
 

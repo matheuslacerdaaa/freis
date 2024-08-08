@@ -3,12 +3,12 @@ import { useState } from 'react';
 
 import { Link } from 'react-router-dom'
 
-export default function Setimo() {
+export default function Oitavo() {
 
-
+    
     return (
 
-        <div className='exercicio7'>
+        <div className='exercicio8'>
 
 
             <header>
@@ -34,17 +34,17 @@ export default function Setimo() {
                         <img src= '/assets/images/voltar.png' />
                     </Link>
 
-                    <h1>Exercício 07 - Cores Primárias</h1>
+                    <h1>Exercício 08 - Temperatura Corporal</h1>
                 </div>
 
-                <div className='rosa'>
+                <div className='azul-vermelho'>
 
 
                 </div>
 
                 <div className='container'>
 
-                    <p>Implementar um programa em Javascript para <b>verificar</b> se duas cores primárias</p>
+                    <p>Implemente um programa em Java que a partir da temperatura, <b>avalie a situação </b>da pessoa conforme a tabela. Ao final, apresente a classificação.</p>
 
 
                 </div>
@@ -52,24 +52,16 @@ export default function Setimo() {
 
                 <div className='caixa'>
 
-                    <label htmlFor="order"><b>Primeira cor</b></label>
-                    <input type="text"  placeholder=''/>
-
-
-                    <div className='um'>
-                        <label htmlFor="order"><b>Segunda cor</b></label>
-                        <input type="text"  placeholder=''/>
-                    </div>
+                    <label htmlFor="order"><b>Informe a temperatura</b></label>
+                    <input type="text"  placeholder='0'/>
 
                     <div className='botao'>
-
-                     <button>Executar</button>
-
+                        <button>Executar</button>
                     </div>
 
                 </div>
 
-                <p className='p'><b>Resultado: A cor é primária?</b></p>
+                <p className='p'><b>A situação para a sua temperatura é: </b></p>
 
 
 
@@ -87,3 +79,4 @@ export default function Setimo() {
 
     );
 }
+

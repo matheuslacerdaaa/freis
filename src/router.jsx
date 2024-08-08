@@ -10,7 +10,8 @@ import Quarto from './pages/quarto';
 import Quinto from './pages/quinto';
 import Sexto from './pages/sexto'
 import Setimo from './pages/setimo';
-
+import Oitavo from './pages/oitavo';
+import Nono from './pages/nono';
 
 export default function Navegacao() {
 
@@ -27,6 +28,8 @@ export default function Navegacao() {
                 <Route path='/quinto' element= {<Quinto/>} />
                 <Route path='/sexto' element={<Sexto/>} />
                 <Route path='/setimo' element={<Setimo />} />
+                <Route path='/oitavo' element= {<Oitavo />} />
+                <Route path='/nono' element= {<Nono />} />
                 <Route path='*' element={<Notfound/>}/>
                 
             </Routes>

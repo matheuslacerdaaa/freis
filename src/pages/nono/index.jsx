@@ -3,12 +3,12 @@ import { useState } from 'react';
 
 import { Link } from 'react-router-dom'
 
-export default function Setimo() {
+export default function Nono() {
 
-
+    
     return (
 
-        <div className='exercicio7'>
+        <div className='exercicio9'>
 
 
             <header>
@@ -34,17 +34,17 @@ export default function Setimo() {
                         <img src= '/assets/images/voltar.png' />
                     </Link>
 
-                    <h1>Exercício 07 - Cores Primárias</h1>
+                    <h1>Exercício 09 - Sorvete</h1>
                 </div>
 
-                <div className='rosa'>
+                <div className='roxo'>
 
 
                 </div>
 
                 <div className='container'>
 
-                    <p>Implementar um programa em Javascript para <b>verificar</b> se duas cores primárias</p>
+                    <p>Implemente um programa em Javascript que <b>calcule o total </b>a se paagr em uma compra na sorveteria, a partir do total de gramas comprado. O preço de <b>100g é R$ 3,50 </b>mas se o total de gramas for a partir de 1kg, o preço das 100g <b>diminui </b>50 centavos. Se o total de gramas for menor ou igual a zero, enviar a mensagem <b>"Peso Inválido".</b> </p>
 
 
                 </div>
@@ -52,24 +52,16 @@ export default function Setimo() {
 
                 <div className='caixa'>
 
-                    <label htmlFor="order"><b>Primeira cor</b></label>
-                    <input type="text"  placeholder=''/>
-
-
-                    <div className='um'>
-                        <label htmlFor="order"><b>Segunda cor</b></label>
-                        <input type="text"  placeholder=''/>
-                    </div>
+                    <label htmlFor="order"><b>Informe a quantidade de gramas:</b></label>
+                    <input type="text"  placeholder='0'/>
 
                     <div className='botao'>
-
-                     <button>Executar</button>
-
+                        <button>Executar</button>
                     </div>
 
                 </div>
 
-                <p className='p'><b>Resultado: A cor é primária?</b></p>
+                <p className='p'><b> O total a pagar é: R$ </b></p>
 
 
 
@@ -87,3 +79,4 @@ export default function Setimo() {
 
     );
 }
+
