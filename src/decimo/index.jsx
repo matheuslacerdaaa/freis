@@ -34,17 +34,17 @@ export default function Decimo() {
                         <img src= '/assets/images/voltar.png' />
                     </Link>
 
-                    <h1>Exercício 09 - Sorvete</h1>
+                    <h1>Exercício 10 - IMC</h1>
                 </div>
 
-                <div className='roxo'>
+                <div className='cinza'>
 
 
                 </div>
 
                 <div className='container'>
 
-                    <p>Implemente um programa em Javascript que <b>calcule o total </b>a se paagr em uma compra na sorveteria, a partir do total de gramas comprado. O preço de <b>100g é R$ 3,50 </b>mas se o total de gramas for a partir de 1kg, o preço das 100g <b>diminui </b>50 centavos. Se o total de gramas for menor ou igual a zero, enviar a mensagem <b>"Peso Inválido".</b> </p>
+                    <p>Implemente um programa em Java que a partir da altura e do peso de uma pessoa, <b>calcule o IMC </b>e avalie a faixa correspondente a tabela. Ao final, apresente o IMC e a situação. </p>
 
 
                 </div>
@@ -52,8 +52,12 @@ export default function Decimo() {
 
                 <div className='caixa'>
 
-                    <label htmlFor="order"><b>Informe a quantidade de gramas:</b></label>
+                    <label htmlFor="order"><b>Informe a altura:</b></label>
                     <input type="text"  placeholder='0'/>
+
+                    <label htmlFor="order"><b>Informe o peso:</b></label>
+                    <input type="text"  placeholder='0'/>
+
 
                     <div className='botao'>
                         <button>Executar</button>
@@ -61,7 +65,8 @@ export default function Decimo() {
 
                 </div>
 
-                <p className='p'><b> O total a pagar é: R$ </b></p>
+                <p className='p'><b> Seu IMC é: <br />
+                 <br />Sua classificação é:  </b></p>
 
 
 

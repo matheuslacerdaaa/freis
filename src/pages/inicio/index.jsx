@@ -100,7 +100,7 @@ function App() {
           </div>
         </span>
 
-        
+
           <span className='tres'>
 
             <div className="card9">
@@ -108,6 +108,13 @@ function App() {
 
               <h3>Sorvete</h3>
               <p>Exercício 09</p>
+            </div>
+
+            <div className="card10">
+              <Link className='cinza' to='/decimo'></Link>
+
+              <h3>IMC</h3>
+              <p>Exercício 10</p>
             </div>
 
           </span>

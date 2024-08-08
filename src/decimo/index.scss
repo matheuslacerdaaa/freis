@@ -1,4 +1,4 @@
-.exercicio9{
+.exercicio10{
 
 
 
@@ -80,11 +80,11 @@
         }
     }
 
-    .roxo{
+    .cinza{
 
         width: 1117px;
         height: 4px;
-       background-color: #b361ff;
+       background-color: #808080;
         margin: 20px 0px 0px 60px;
 
 
@@ -113,7 +113,7 @@
     .caixa{
 
         width: 476px;
-        height: 25%;
+        height: 35%;
         display: flex;
         flex-direction: column;
         background-color: #fff;
@@ -129,7 +129,7 @@
 
         input{
             width: 414px;
-            height: 41px;
+            height: 40px;
             border-radius: 12px;
             border: 1px solid #383131;
             padding: 0px 0px 0px 10px;
@@ -152,15 +152,15 @@
         }
 
         .botao{
-           padding-top: 30px;
            width: 415px;
            display: flex;
            justify-content: end;
+           margin-top: 10%;
         }
 
         .p{
 
-            padding: 10px 0px 0px 700px;
+            padding: 10px 0px 0px 600px;
 
 
         }
