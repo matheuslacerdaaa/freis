@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export default function Onze() {
 
 
-    const[num, setNum] = useState(0)
+    const[num, setNum] = useState()
     
     const[res, setres] = useState()
     const[res1, setres1] = useState()
@@ -83,20 +83,20 @@ export default function Onze() {
 
                 </div>
 
+                <div className='section'>
+                    <div className='caixa'>
 
-                <div className='caixa'>
+                        <label htmlFor="order"><b>Informe o numero: </b></label>
+                        <input type="text" value={num} onChange={e => setNum(e.target.value)}  />
 
-                    <label htmlFor="order"><b>Informe o numero: </b></label>
-                    <input type="text" value={num} onChange={e => setNum(e.target.value)}  />
+                        <div className='botao'>
+                            <button onClick={Calculadora}>Executar</button>
+                        </div>
 
-                    <div className='botao'>
-                        <button onClick={Calculadora}>Executar</button>
                     </div>
 
-                </div>
 
-
-     <p className='p'><b> <h3>{res}</h3>
+                        <p className='p'><b> <h3>{res}</h3>
                           <h3>{res1}</h3>
                           <h3>{res2} </h3>
                           <h3>{res3}</h3>
@@ -109,8 +109,7 @@ export default function Onze() {
                           <h3>{res10}</h3>   </b></p>
 
 
-
-
+                </div>
 
 
             </main>

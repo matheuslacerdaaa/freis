@@ -149,6 +149,7 @@
             background-color: #6278F7;
             color: #ffff;
             border: none;
+            margin-bottom: 15px;
         }
 
         .botao{
@@ -158,17 +159,17 @@
            margin-top: 10%;
         }
 
-        .p{
-            min-width: auto;
-            margin: 0px 0px 1000px 1000px;
-
+        .section{
+            
             display: flex;
-                flex-direction: column;
+            flex-direction: row;
+            gap: 140px;
 
-            h3{
-                font-size: 18px;
-                display: flex;
-                flex-direction: row;
+            .p{
+
+
+               margin-top: 25px;     
+
             }
 
         }
