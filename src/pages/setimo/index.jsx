@@ -5,6 +5,26 @@ import { Link } from 'react-router-dom'
 
 export default function Setimo() {
 
+    const [cor1,setCor1] = useState();
+    const [cor2,setCor2] = useState();
+    const [res,setRes] = useState('');
+
+    function somar(){
+
+        if(cor1 === 'amarelo' && cor2 === 'amarelo' || cor1 === 'vermelho' && cor2 === 'vermelho' || cor1 === 'azul' && cor2 === 'azul' || cor1 === 'amrelo' & cor2 === 'vermelho' || cor1 === ' vermelho' & cor2 === 'amarelo' || cor1 === 'amarelo' && cor2 === 'azul' || cor1 === 'azul' && cor2 === 'amarelo' || cor1 === 'azul' && cor2 === 'vermelho' || cor1 === 'vermelho' && cor2 === 'azul' ){
+            setRes("true")
+        }
+        else{
+            setRes("false")
+        }
+
+        }
+
+
+   
+
+
+
 
     return (
 
@@ -53,23 +73,23 @@ export default function Setimo() {
                 <div className='caixa'>
 
                     <label htmlFor="order"><b>Primeira cor</b></label>
-                    <input type="text"  placeholder=''/>
+                    <input type="text"  value={cor1} onChange={ e => setCor1(e.target.value)}/>
 
 
                     <div className='um'>
                         <label htmlFor="order"><b>Segunda cor</b></label>
-                        <input type="text"  placeholder=''/>
+                        <input type="text"  value={cor2} onChange={ e => setCor2(e.target.value)}/>
                     </div>
 
                     <div className='botao'>
 
-                     <button>Executar</button>
+                     <button onClick={somar}>Executar</button>
 
                     </div>
 
                 </div>
 
-                <p className='p'><b>Resultado: A cor é primária?</b></p>
+                <p className='p'><b>Resultado: A cor é primária?{res}</b></p>
 
 
 

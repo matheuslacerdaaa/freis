@@ -3,7 +3,34 @@ import { useState } from 'react';
 
 import { Link } from 'react-router-dom'
 
+   
+
+
 export default function Nono() {
+
+    const [num1,setNum1] = useState()
+    const [res,setRes] = useState()
+
+    function somar(){
+        let ret = Number(num1) / 100
+        let soma =  ret * 3.50
+        let soma2 =  ret * 3.00
+
+        if(num1 <= 999){
+            setRes("R$" + soma)
+        }
+
+        else if(num1 >=  1000){
+            setRes("R$" + soma2)
+        }
+
+        else if (num1 === 0){
+            setRes("peso inválido")
+        }
+        else{
+            setRes("peso inválido")
+        }
+    }
 
     
     return (
@@ -44,7 +71,7 @@ export default function Nono() {
 
                 <div className='container'>
 
-                    <p>Implemente um programa em Javascript que <b>calcule o total </b>a se paagr em uma compra na sorveteria, a partir do total de gramas comprado. O preço de <b>100g é R$ 3,50 </b>mas se o total de gramas for a partir de 1kg, o preço das 100g <b>diminui </b>50 centavos. Se o total de gramas for menor ou igual a zero, enviar a mensagem <b>"Peso Inválido".</b> </p>
+                    <p>Implemente um programa em Javascript que <b>calcule o total </b>a se pagar em uma compra na sorveteria, a partir do total de gramas comprado. O preço de <b>100g é R$ 3,50 </b>mas se o total de gramas for a partir de 1kg, o preço das 100g <b>diminui </b>50 centavos. Se o total de gramas for menor ou igual a zero, enviar a mensagem <b>"Peso Inválido".</b> </p>
 
 
                 </div>
@@ -53,15 +80,15 @@ export default function Nono() {
                 <div className='caixa'>
 
                     <label htmlFor="order"><b>Informe a quantidade de gramas:</b></label>
-                    <input type="text"  placeholder='0'/>
+                    <input type="text"  onChange={num1} onChange={ e => setNum1(e.target.value)}/>
 
                     <div className='botao'>
-                        <button>Executar</button>
+                        <button onClick={somar}>Executar</button>
                     </div>
 
                 </div>
 
-                <p className='p'><b> O total a pagar é: R$ </b></p>
+                <p className='p'><b> O total a pagar é: {res}</b></p>
 
 
 
