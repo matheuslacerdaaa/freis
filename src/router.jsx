@@ -13,7 +13,7 @@ import Setimo from './pages/setimo';
 import Oitavo from './pages/oitavo';
 import Nono from './pages/nono';
 import Decimo from './pages/decimo';
-
+import Onze from './pages/onze';
 export default function Navegacao() {
 
     return (
@@ -32,6 +32,8 @@ export default function Navegacao() {
                 <Route path='/oitavo' element= {<Oitavo />} />
                 <Route path='/nono' element= {<Nono />} />
                 <Route path='/decimo' element= {<Decimo />} />
+                <Route path='/onze' element= {<Onze />} />
+
                 <Route path='*' element={<Notfound/>}/>
                 
             </Routes>

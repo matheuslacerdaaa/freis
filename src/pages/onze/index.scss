@@ -1,4 +1,4 @@
-.exercicio10{
+.exercicio11{
 
 
 
@@ -80,11 +80,11 @@
         }
     }
 
-    .beggie{
+    .black{
 
         width: 1117px;
         height: 4px;
-        background-color: #ff7c7c;
+       background-color: #000000;
         margin: 20px 0px 0px 60px;
 
 
@@ -159,9 +159,17 @@
         }
 
         .p{
+            min-width: auto;
+            margin: 0px 0px 1000px 1000px;
 
-            padding: 10px 0px 0px 800px;
+            display: flex;
+                flex-direction: column;
 
+            h3{
+                font-size: 18px;
+                display: flex;
+                flex-direction: row;
+            }
 
         }
    

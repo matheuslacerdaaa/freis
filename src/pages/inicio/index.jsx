@@ -111,10 +111,17 @@ function App() {
             </div>
 
             <div className="card10">
-              <Link className='cinza' to='/decimo'></Link>
+              <Link className='beggie' to='/decimo'></Link>
 
               <h3>IMC</h3>
               <p>Exercício 10</p>
+            </div>
+
+            <div className="card11">
+              <Link className='black' to='/onze'></Link>
+
+              <h3>TABUADA</h3>
+              <p>Exercício 11</p>
             </div>
 
           </span>
