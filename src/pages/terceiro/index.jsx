@@ -1,8 +1,26 @@
 import './index.scss'
 
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 export default function Terceiro() {
+
+    const [num1, setNum1] = useState()
+    const [num2, setNum2] = useState()
+    const [num3, setNum3] = useState()
+    const [res, setRes] = useState('R$ 0,00')
+
+    function somar(){
+
+        const p = 13.50
+        const m = 15.0
+        const g = 17.50
+
+        let soma = Number ((num1) * p) +  Number ((num2) * m) +  Number ((num3) * g)
+        setRes("R$ " + soma)
+    }
+
+
     return (
 
         <div className='exercicio3'>
@@ -55,18 +73,18 @@ export default function Terceiro() {
 
                    <div className='um'>
                      <label htmlFor="order"><b>Quantidade pequeno</b></label>
-                        <input type="text" placeholder='0' />
+                        <input type="text" value={num1} onChange={e => setNum1(e.target.value)} />
                     </div> 
 
                     <div className='dois'>
                         <label htmlFor="order"><b>Quantidade medio</b></label>
-                        <input type="text" placeholder='0' />
+                        <input type="text"  value={num2} onChange={e => setNum2(e.target.value)} />
                     </div>
 
                     
                     <div className='tres'>
                         <label htmlFor="order"><b>Quantidade grande</b></label>
-                        <input type="text" placeholder='0' />
+                        <input type="text" value={num3} onChange={e => setNum3(e.target.value)} />
                     </div>
 
                 </div>
@@ -74,13 +92,13 @@ export default function Terceiro() {
 
                     <div className='botao'>
 
-                        <button>Executar</button>
+                        <button onClick={somar}>Executar</button>
 
                     </div>
 
                 </div>
 
-                <p className='p'><b>Resultado: O total é R$ 0,00</b></p>
+                <p className='p'><b>Resultado: O total é {res}</b></p>
 
 
 

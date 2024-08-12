@@ -1,8 +1,23 @@
 import './index.scss'
 
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 export default function Quarto() {
+
+    const[num1,setNum1] = useState ();
+    const[num2,setNum2] = useState ();
+    const[res,setRes] = useState ('0h');
+
+
+    function somar(){
+        let soma = (Number (num1) * Number (num2)) / 3600
+        setRes(soma.toFixed(2) + "h")
+    }
+
+  
+
+
     return (
 
         <div className='exercicio4'>
@@ -50,23 +65,23 @@ export default function Quarto() {
                 <div className='caixa'>
 
                     <label htmlFor="order"><b>Nome do livro</b></label>
-                    <input type="text"  placeholder='Digite aqui'/>
+                    <input type="text" />
 
                     <label htmlFor="order"><b>Total de páginas</b></label>
-                    <input type="text"  placeholder='0'/>
+                    <input type="text"  value={num1} onChange={ e => setNum1(e.target.value)}/>
 
                     <label htmlFor="order"><b>Tempos em segundos por página</b></label>
-                    <input type="text"  placeholder='0'/>
+                    <input type="text"  value={num2} onChange={ e => setNum2(e.target.value)}/>
 
                     <div className='botao'>
                      
-                     <button>Executar</button>
+                     <button onClick={somar} >Executar</button>
 
                     </div>
 
                 </div>
 
-                <p className='p'><b>Resultado: O total é 0h</b></p>
+                <p className='p'><b>Você lerá em {res}</b></p>
 
 
 

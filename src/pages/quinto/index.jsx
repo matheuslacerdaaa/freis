@@ -1,8 +1,31 @@
 import './index.scss'
 
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
 export default function Quinto() {
+
+    const[num1, setNum1] = useState()
+    const[num2, setNum2] = useState()
+    const[num3, setNum3] = useState()
+    const[res, setRes] = useState()
+
+
+    function somar(){
+
+        let soma = (Number (num1) + Number (num2) + Number (num3)) /3
+
+        if(soma <6){
+            setRes(' Não')
+        }
+        else{
+            setRes(' Sim')
+        }
+
+    }
+
+
+
     return (
 
         <div className='exercicio5'>
@@ -55,18 +78,18 @@ export default function Quinto() {
 
                    <div className='um'>
                      <label htmlFor="order"><b>Primeira Nota</b></label>
-                        <input type="text" placeholder='0' />
+                        <input type="text" value={num1} onChange={ e => setNum1 (e.target.value)} />
                     </div> 
 
                     <div className='dois'>
                         <label htmlFor="order"><b>Segunda Nota</b></label>
-                        <input type="text" placeholder='0' />
+                        <input type="text" value={num2} onChange={ e => setNum2 (e.target.value)} />
                     </div>
 
                     
                     <div className='tres'>
                         <label htmlFor="order"><b>Terceira Nota</b></label>
-                        <input type="text" placeholder='0' />
+                        <input type="text" value={num3} onChange={ e => setNum3 (e.target.value)} />
                     </div>
 
                 </div>
@@ -74,13 +97,13 @@ export default function Quinto() {
 
                     <div className='botao'>
 
-                        <button>Executar</button>
+                        <button onClick={somar}>Executar</button>
 
                     </div>
 
                 </div>
 
-                <p className='p'><b>Resultado: O aluno passou?</b></p>
+                <p className='p'><b>Resultado: O aluno passou?{res}</b></p>
 
 
 
