@@ -3,7 +3,7 @@
 
     header {
         height: 70px;
-        width: 100vw;
+        width: 100%;
         background-color: #6278F7;
         display: flex;
         flex-direction: row;
@@ -48,8 +48,8 @@
 
     main {
         
-        width: 100vw;
-        height: 92.1vh;
+        width: 100%;
+        height: 110vh;
         padding: 0px 0px 0px 60px;
         display: flex;
         flex-direction: column;
@@ -421,10 +421,143 @@
         background-color: #000000;
     }
 
+
+    }
+
+
+    .card12{
+        width: 215px;
+        height: 158px;
+        background-color: #F5F6FA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0px 0px 0px;
+        gap: 12px;
+        border-radius: 12px;
+
+        
+    h3 {
+        color: #383131;
+        font-size: 14px;
+    }
+
+     p {
+        color: #383131;
+        font-size: 14px;
+    }
+
+    .azul-escuro {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        background-color: #3103ff;
     }
 
 
 
+    }
+
+
+    .card13{
+        width: 215px;
+        height: 158px;
+        background-color: #F5F6FA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0px 0px 0px;
+        gap: 12px;
+        border-radius: 12px;
+
+        
+    h3 {
+        color: #383131;
+        font-size: 14px;
+    }
+
+     p {
+        color: #383131;
+        font-size: 14px;
+    }
+
+    .laranja {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        background-color: #ff6600;
+    }
+
+
+
+    }
+
+
+    .card14{
+        width: 215px;
+        height: 158px;
+        background-color: #F5F6FA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0px 0px 0px;
+        gap: 12px;
+        border-radius: 12px;
+
+        
+    h3 {
+        color: #383131;
+        font-size: 14px;
+    }
+
+     p {
+        color: #383131;
+        font-size: 14px;
+    }
+
+    .lilais {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        background-color: #ff00aa;
+    }
+
+
+
+    }
+
+    .card15{
+        width: 215px;
+        height: 158px;
+        background-color: #F5F6FA;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0px 0px 0px;
+        gap: 12px;
+        border-radius: 12px;
+
+        
+    h3 {
+        color: #383131;
+        font-size: 14px;
+    }
+
+     p {
+        color: #383131;
+        font-size: 14px;
+    }
+
+    .cinza {
+        width: 60px;
+        height: 60px;
+        border-radius: 12px;
+        background-color: #797979;
+    }
+
+
+
+    }
 
 
 

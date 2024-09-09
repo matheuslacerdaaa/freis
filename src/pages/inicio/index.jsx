@@ -120,11 +120,56 @@ function App() {
             <div className="card11">
               <Link className='black' to='/onze'></Link>
 
-              <h3>TABUADA</h3>
+              <h3>Tabuada</h3>
               <p>Exercício 11</p>
             </div>
 
+            
+            <div className="card12">
+              <Link className='azul-escuro' to='/doze'></Link>
+
+              <h3>Notas válidas</h3>
+              <p>Exercício 12</p>
+            </div>
+
           </span>
+
+          <span className='quatro'> 
+          
+          <div className="card13">
+              <Link className='laranja' to='/treze'></Link>
+
+              <h3>Leitor</h3>
+              <p>Exercício 13</p>
+            </div>
+
+            <div className="card14">
+              <Link className='lilais' to='/quatorze'></Link>
+
+              <h3>Primo</h3>
+              <p>Exercício 14</p>
+            </div>
+
+            <div className="card15">
+              <Link className='cinza' to='/quinze'></Link>
+
+              <h3>Pessoas</h3>
+              <p>Exercício 15</p>
+            </div>
+
+            <div className="card15">
+              <Link className='cinza' to='/quinze'></Link>
+
+              <h3>Pessoas</h3>
+              <p>Exercício 15</p>
+            </div>
+
+          
+          
+          
+          
+          </span>
+          
          
 
           

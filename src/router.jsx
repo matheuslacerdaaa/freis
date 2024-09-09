@@ -14,6 +14,12 @@ import Oitavo from './pages/oitavo';
 import Nono from './pages/nono';
 import Decimo from './pages/decimo';
 import Onze from './pages/onze';
+import Doze from './pages/doze';
+import Treze from './pages/treze';
+import Quatorze from './pages/quatorze';
+import Quinze from './pages/quinze';
+
+
 export default function Navegacao() {
 
     return (
@@ -33,6 +39,10 @@ export default function Navegacao() {
                 <Route path='/nono' element= {<Nono />} />
                 <Route path='/decimo' element= {<Decimo />} />
                 <Route path='/onze' element= {<Onze />} />
+                <Route path='/doze' element= {<Doze />} />
+                <Route path='/treze' element= {<Treze />} />
+                <Route path='/quatorze' element= {<Quatorze />} />
+                <Route path='/quinze' element= {<Quinze />} />
 
                 <Route path='*' element={<Notfound/>}/>
                 
